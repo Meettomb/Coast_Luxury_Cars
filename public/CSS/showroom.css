@@ -1,0 +1,794 @@
+*{
+    margin: 0;
+    padding: 0;
+    transition: 0.3s;
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* li
+{
+    list-style: none;
+} */
+.header_image_div-main_image {
+    background-image: url('../IMAGE/BBT_1.jpg');
+    background-color: black;
+    width: 100%;
+    height: 730px;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+
+header {
+    background: transparent;
+    /* background-color: black; */
+    /* background-image: linear-gradient(black,#222); */
+    color: white;
+    width: 100%;
+    height: auto;
+    font-size: 10px;
+}
+
+.web_logo
+{
+    width:10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    margin-left: 20px;
+    margin-top: -20px;
+}
+.web_logo img
+{
+    width: 200px;
+    height: 150px;
+}
+
+.info
+{
+    height: 100%;
+    width: 85%;
+    display: flex;
+    align-items: center;
+    float: right;
+    padding-top: 30px;
+    
+}
+.info-ul-1
+{
+    width: 100%;
+    height:100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.info-li{
+    font-size:2.1em;
+    display: inline-flex;
+    justify-content: flex-end;
+    padding: 10px 20px 10px 20px;
+    color: white;
+    border-right-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-width: 2px;
+    text-transform: uppercase;
+}
+
+.info-li:hover {
+    border-radius: 50%;
+    border-color: rgb(255, 0, 0);
+    /* transition: 0.2s; */
+    border-width: 5px;
+}
+
+
+.imgmenu {
+    width: 50px;
+    margin-right: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+
+.sidenav {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    position: fixed;
+}
+
+.sidenvimage-div {
+    width: 40%;
+    height: 100vw;
+    display: inline-flex;
+    transition-delay: 0.5s;
+}
+
+.sidenvimage {
+    width: 100%;
+    height: 100vh;
+}
+
+.sidenavelogo {
+    position: relative;
+    top: -50px;
+    left: -77%;
+    width: 300px;
+    height: 250px;
+}
+
+.sidenav-linksarea {
+    width: 60%;
+    height: 100%;
+    float: right;
+    background-color: #0f0f0f;
+}
+
+.closenav {
+    width: 0;
+    font-size: 30px;
+    margin-right: 5%;
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
+    left: 90%;
+    margin-top: 20px;
+}
+
+.closenav:hover {
+    color: red;
+}
+
+.sidenav-links-1 {
+    width: 50%;
+    height: auto;
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    top: -100px;
+}
+
+.sidenav-links-1 li {
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    text-transform: capitalize;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.sidenav-links-1 i {
+    color: rgba(255, 0, 0, 0.92);
+    margin-right: 10px;
+}
+
+.side-nav-a {
+    color: rgba(255, 248, 248, 0.685);
+    font-size: 2.5em;
+    margin-left: 30%;
+
+}
+
+.side-nav-a:hover {
+    color: red;
+}
+
+.sidenav-links-2 {
+    width: 49%;
+    height: auto;
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: 20px;
+    position: relative;
+    top: 100px;
+    /* animation: nav_move2 2.5s; */
+}
+
+@keyframes nav_move2 {
+    0% {
+        top: 500px;
+    }
+
+    100% {
+        top: 0px;
+    }
+
+}
+
+.sidenav-links-2 li {
+    display: flex;
+    margin-top: 50px;
+    text-transform: capitalize;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.sidenav-links-2 i {
+    color: rgba(255, 0, 0, 0.92);
+    margin-right: 10px;
+}
+
+.sidenav-social-link {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20%;
+    position: relative;
+    /* animation: nav_move3 3s; */
+}
+
+@keyframes nav_move3 {
+    1% {
+        left: -100%;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
+.sidenav-social-link span {
+    text-transform: uppercase;
+    color: white;
+    font-size: 2em;
+    letter-spacing: 5px;
+    margin-left: 10%;
+    padding-right: 10px;
+}
+
+.sidenav-social-link i {
+    width: 3%;
+    margin-left: 20px;
+    cursor: pointer;
+    color: white;
+    font-size: 2.2em;
+}
+.our{
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    top: 430px;
+    left: -90px;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++ CONTENT ++++++++++++++++++++++++++++++++++++++++ */
+
+
+.content{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    font-size: 10px;
+    padding-bottom: 80px;
+    overflow: hidden;
+}
+.content_div_1{
+    width: 90%;
+    /* background-color: blueviolet; */
+    height: auto;
+}
+.car_sale_spane_1{
+    float: left;
+    width: 50%;
+    /* background-color: aquamarine; */
+}
+.car_sale_span_1-1{
+    font-size: 4.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.car_sale_span_1-2{
+    font-size: 4.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: transparent;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+}
+.car-sale-data{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 120px;
+    flex-wrap: wrap;
+}
+.car-sale-data span{
+    width: 50%;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    padding-bottom: 25px;
+    margin-top: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* background-color: blue; */
+}
+.car-sale-data p{
+    width: 100%;
+    display: inline-flex;
+    text-transform: uppercase;
+    margin-left: 15px;
+}
+.car-sale-data i{
+    color: black;
+    border: 2px black solid;
+    border-radius: 10px;
+    font-size: 2em;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+}
+.car_sale_button{
+    width: 50%;
+    padding: 4% 8% 4% 8%;
+    text-align: center;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-top: 10%;
+    cursor: pointer;
+}
+.car_sale_button:hover{
+    background-color: #1b1b1b;
+}
+.car_sale_spane_2{
+    width: 50%;
+    float: right;
+    display: flex;
+    align-items: center;
+    object-fit: fill;
+}
+.car_sale_spane_2 img{
+    width: 100%;
+    height: 400px;
+    background-color: turquoise;
+}
+.reveal{
+    position: relative;
+    transform: translatex(150px);
+    opacity: 0;
+    transition: 1s all ease;
+    overflow: hidden;
+  }
+
+  
+.reveal.active{
+    transform: translatex(0);
+    opacity: 1;
+  }
+
+  .reveal2{
+    position: relative;
+    transform: translatex(-150px);
+    opacity: 0;
+    transition: 1s all ease;
+    overflow: hidden;
+  }
+
+  
+.reveal2.active{
+    transform: translatex(0);
+    opacity: 1;
+  }
+
+
+.showRoom_name_link{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px 0 50px 0;
+}
+.showRoom_name_link a{
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.594);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;   
+    border-bottom: 3.5px #69686836 solid;
+    padding: 10px 40px 10px 40px;
+    font-size: 1.4em;
+    text-align: center;
+}
+/* .showRoom_name_link a:focus{
+    border-bottom: 3.5px red solid;
+    border-radius: 10px;
+    color: black;
+} */
+.showRoom_name_link a:active{
+    border-bottom: 3.5px red solid;
+    border-radius: 10px;
+    color: black;
+}
+.showRoom_name_link a:hover{
+    color: black;
+    
+    border-bottom: 3.5px red solid;
+    border-radius: 10px;    
+}
+
+.showRoom_name_div{
+    width: 100%;
+    margin-top: 50px;
+}
+.show_room_name_span_1-1{
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 6.5%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+}
+.show_room_name_span_1-2{
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: transparent;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 5px;
+}
+.showRoom_name_div p{
+    width: 40%;
+    padding: 30px 0 20px 0;
+    margin-left: 6.5%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.479);
+}
+.address_p{
+    margin-top: -20px;
+}
+.address{
+    color: red;
+    text-transform: capitalize;
+    margin-right: 10px;
+}
+
+.content-2{
+    width: 100%;
+    height: auto;
+    font-size: 10px;
+    padding-bottom: 80px;
+    overflow: auto;    
+}
+  .content_div_2{
+    width: 100%;
+    height: auto;
+    display: inline-flex;
+    align-items: flex-start;
+    overflow: scroll;   
+    cursor: grab; 
+  }
+  .expensive_div {
+    width: 32%;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+  .expensive_div img{
+    width: 400px;
+    height: 267px;
+    border-radius: 10px;
+  }
+
+
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+
+
+  @media (min-width: 611px) and (max-width :1200px){
+    .our{
+        top: 350px;
+        left: 0;
+    }
+
+    .car_sale_span_1-1{
+        font-size: 4.4em;
+    }
+    .car_sale_span_1-2{
+        font-size: 3em;
+    }
+    .car_sale_spane_2{
+        background-color: red;
+        width: 50%;
+        margin-top: 60px;
+    }
+    .car-sale-data{
+        /* background-color: cyan; */
+        margin: 15px 0 0 0;
+        /* padding: 0; */
+    }
+    .car-sale-data span{
+        width: 100%;
+    }
+
+    .showRoom_name_link a{
+        font-size: 1em;
+        padding: 0px 15px 15px 15px;
+    }
+    .showRoom_name_div p{
+        width: 70%;
+    }
+
+
+    .content_div_2{
+        /* background-color: red; */
+        display: flex;
+        justify-content: flex-start;
+    }
+    .expensive_div {
+        width: 100%;
+        margin-top: 20px;
+        border-radius: 10px;
+        margin-right: 20px;
+        /* background-color: blue; */
+        gap: 90px;
+      }
+      .expensive_div img{
+        width: 800px;
+        height: 467px;
+        border-radius: 10px;
+      }
+  }
+
+  @media (min-width: 11px) and (max-width :611px){
+    .our{
+        top: 400px;
+        left: 0;
+    }
+  }
+  @media (min-width: 11px) and (max-width :729px){
+    .showRoom_name_link{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .showRoom_name_link a{
+        font-size: 0.5em;
+    }
+  }
+  @media (min-width: 11px) and (max-width :692px){
+    
+    .car_sale_spane_1{
+        width: 100%;
+    }
+    .car-sale-data {
+        margin-top: 5%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .car-sale-data span{
+        width: 50%;
+        /* background-color: cyan; */
+    }
+    .car_sale_spane_2{
+        display: none;
+    }
+    .car_sale_spane_2 img{
+        display: none;
+    }
+
+    .showRoom_name_link a{
+        font-size: 0.8em;
+        border-bottom: 1px solid;
+    }
+    .show_room_name_span_1-1{
+        width: 100%;
+        font-size: 1.5em;
+    }
+    .show_room_name_span_1-2{
+        font-size: 1.5em;
+    }
+    .showRoom_name_div p{
+        width: 90%;
+    }
+    .content_div_2{
+        gap: 130px;
+        margin-right: 30px;
+        width: 100%;
+    }
+    .content_div_2 img{ 
+        width: auto;
+        height: 380px;
+    }
+  }
+  @media (min-width: 11px) and (max-width :692px){
+   
+    .showRoom_name_div p{
+        font-size: 0.8em;
+        width: 99%;
+    }
+    .content_div_2{
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 30px;
+        width: 100%;
+        height: 380px;
+    }
+    .expensive_div{
+        width: 90%;
+    }
+    .expensive_div img{ 
+        width: 100%;
+        height: 200px;
+    }
+  }
+  @media (min-width: 11px) and (max-width :455px){
+    .car_sale_span_1-1{
+        font-size: 1.8em;
+    }
+    .car_sale_span_1-2{
+        font-size: 1.8em;
+    }
+    .car-sale-data span{
+        width: 100%;
+    }
+  }
+
+@media (min-width: 611px) and (max-width :776px){
+    .info{
+        width: 85%;
+    }
+    .info-ul-1 li{
+        font-size: 1.5em;
+    }
+    .imgmenu{
+        width: 8%;
+    }
+}
+@media (min-width: 300px) and (max-width :611px){
+  
+    .web_logo img{
+        width: 150px;
+        height: 80%;
+    }
+    .info{
+        width: 85%;
+    }
+}
+@media (min-width: 526px) and (max-width :611px){
+    
+    .info-ul-1 li{
+        font-size: 1.5em;
+        padding: 12px;
+    }
+    .imgmenu{
+        width: 8%;
+    }
+}
+
+@media (min-width: 80px) and (max-width :526px){
+    .info-ul-1 li{
+        font-size: 1.2em;
+        padding: 12px;
+    }
+    .imgmenu{
+        width: 6%;
+    }
+
+    .sidenav-links-1 li a{
+        font-size: 1.5em;
+    }
+    .sidenav-links-2 li a{
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 415px) and (max-width :460px){
+    .info-ul-1 li{
+        font-size: 1.2em;
+        padding: 8px;
+        border: none;
+    }
+    .imgmenu{
+        width: 6%;
+    }
+}
+
+@media (min-width: 20px) and (max-width :872px){
+    .sidenvimage-div{
+        display: none;
+    }
+    .sidenav-linksarea{
+        width: 100%;
+    }
+    .sidenav-links-1{
+        width: 49%;
+    }
+    .sidenav-links-2{
+        width: 49%;
+    }
+}
+
+@media (min-width: 400px) and (max-width :415px){
+    .info-ul-1{
+        display: none;
+    }
+    .info-ul-1 li{
+        display: none;
+    }
+    .imgmenu{
+        display: inline-flex;
+        width: 10%;
+        margin-left: 80%;
+    }
+    .web_logo img{
+        margin-left: 30px;
+    }
+}
+
+@media (min-width: 300px) and (max-width :400px){
+    .web_logo{
+        width: 0;
+    }
+    .web_logo img{
+        margin-left: 30px;
+        padding-left: 30px;
+    }
+    .info-ul-1{
+        display: none;
+    }
+    .info-ul-1 li{
+        display: none;
+    }
+    .imgmenu{
+        width: 10%;
+        margin-left: 80%;
+    }
+}
+
+@media (min-width: 200px) and (max-width :300px){
+    .web_logo{
+        display: inline-flex;
+        width: 0;
+    }
+    .web_logo img{
+        width: 100px;
+        height: 100px;
+        margin-left: 50px;
+    }
+    .imgmenu{
+        width: 20%;
+        margin-left: 70%;
+    }
+    .info-ul-1{
+        display: none;
+    }
+    .info-ul-1 li{
+        display: none;
+    }
+}

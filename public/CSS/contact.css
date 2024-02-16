@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 10px;
+    background-color: rgb(235, 235, 215);
+}
+.container{
+    width: 100%;
+    height: auto;  
+    display: flex;
+    justify-content: center;  
+    padding-bottom: 40px;
+}
+.container2{
+    width: 90%;
+}
+.left_side{
+    float: left;
+    width: 50%;
+    height: auto;
+}
+.contact{
+    width: 100%;
+    height: auto;
+    margin-top: 80px;
+}
+.contact h1{
+    text-transform: uppercase;
+    font-size: 3em;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.detail{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.detail i{
+    font-size: 5em;
+    color: rgba(0, 0, 0, 0.701);
+}
+.detail div{
+    margin-left: 20px;
+}
+.detail a{
+    font-size: 2.2em;
+    color: black;
+    font-weight: bolder;
+}
+.detail p{
+    font-size: 1.7em;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+.detail .first_p{
+    font-size: 2.2em;
+    font-weight: bolder;
+}
+.contact h2{
+    font-size: 2em;
+    margin-top: 30px;
+}
+.contact p{
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+
+.right_side{
+    float: left;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login_box{
+    width: 90%;
+    height: auto;
+    background-color: snow;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.login_box div{
+    width: 90%;
+    height: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    display: flexbox;
+    
+}
+
+.heading h1{
+    color: black;
+    font-weight: 800;
+    font-size: 4em;
+    text-transform: uppercase;
+}
+.heading h2{
+    text-transform: capitalize;
+}
+
+form{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+input{
+    padding: 15px 10px 15px 10px;
+    width: 42%;
+    border-radius: 8px;
+    border: 1.5px rgba(0, 0, 0, 0.578) solid;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    outline: none;
+    font-weight: bold;
+    margin-top: 30px;
+}
+input:focus{
+    border: 1.8px black solid;
+    transition: 0s;
+}
+
+textarea{
+    margin-top: 30px;
+    border-radius: 8px;
+    padding: 15px 10px 15px 10px;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+input[type=checkbox]{
+    width: 5%;
+    height: 20px;
+}
+label{
+    font-size: 2.2em;
+    margin-left: 15px;
+}
+input[type=submit]{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+input[type=submit]:hover{
+    background-color: transparent;
+    color: black;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+
+@media (min-width: 20px) and (max-width :1025px){
+    .contact h1{
+        font-size: 2em;
+    }
+
+    .detail i{
+        font-size: 4em;
+    }
+    .detail div a{
+        font-size: 2em;
+    }
+    .detail div p{
+        font-size: 1.5em;
+    }
+
+    .left_side{
+        width: 100%;
+    }
+
+
+    .right_side{
+        width: 100%;
+        height: auto;
+        padding: 40px 0 0px 0;
+    }
+
+    form{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    form input{
+        width: 45%;
+    }
+}
+
+@media (min-width: 20px) and (max-width :900px){
+    form input{
+        width: 100%;
+    }
+    form textarea{
+        width: 100%;
+    }
+}

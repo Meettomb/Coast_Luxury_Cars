@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    padding-bottom: 40px;
+}
+.cotainer{
+    width: 95%;
+    height: auto;
+}
+
+
+.content_div_2{
+    width: 100%;
+    height: auto;
+    display: inline-flex;
+    align-items: flex-start;
+    overflow-x: scroll;   
+    scroll-snap-type: x mandatory;
+    cursor: pointer; 
+  }
+  
+  .expensive_div {
+    width: 90%;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-right: 20px;
+    scroll-snap-align: start;
+  }
+  .expensive_div img{
+    width: 800px;
+    height: 450px;
+  }
+  
+
+ .car_detail{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+ }
+ .car_detail_div{
+    width: 30%;
+    display: inline-flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 20px;
+ }
+ .car_detail_div .span1{
+    font-size: 3.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-weight: 800;
+ }
+
+ .car_detail_div .span2{
+    font-size: 3em;
+    font-weight: 500;
+    text-transform: uppercase;
+ }
+
+ .car_detail_div_2{
+    width: 50%;
+    display: inline-flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+ }
+
+ .car_detail_div_2 .span1{
+    font-size: 2em;
+    font-weight: 400;
+    text-transform: capitalize;
+ }
+
+ .car_detail_div_3 button{
+    background-color: black;
+    color: white;
+    padding: 20px 30px 20px 30px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 2em;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+ }
+ .car_detail_div_3 button:hover{
+    border: 2px black solid;
+    background-color: transparent;
+    color: black;
+    transition: 0.2s;
+ }
+
+.Summary{
+    margin-top: 80px;
+    padding-bottom: 20px;
+    font-size: 3em;
+    text-transform: uppercase;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+ .car_extra_details_div{
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+ }
+ .car_extra_details{
+    width: 30%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+ }
+ .car_extra_details img{
+    width: 10%;
+    border: 1px black solid;
+    padding: 8px;
+    border-radius: 10px;
+ }
+ .car_extra_details span{
+    margin-left: 20px;
+    font-size: 2em;
+    text-transform: uppercase;
+ }
+ .car_extra_details p{
+    margin-left: 2%;
+    font-size: 1.8em;
+    color: red;
+    text-transform: capitalize;
+ }

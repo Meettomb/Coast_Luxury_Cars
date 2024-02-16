@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.con{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    padding-bottom: 40px;
+}
+.child{
+    width: 30%;
+    height: auto;
+}
+.check{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 0px 0;
+}
+#fa{
+    font-size: 5em;
+    color: white;
+    border-radius: 50%;
+    background-color: rgb(56, 235, 16);
+    padding: 20px;
+    height: auto;
+    animation: 0.8s fa ease-in;
+}
+@keyframes fa{
+    100%{transform: rotate3d(0, 1, 0, 360deg)}
+}
+.succ{
+    width: 100%;
+    height: auto;
+    background-color: #f0efe9;
+    display: flex;
+    justify-content: center;
+    margin-top: -40px;
+    z-index: -1;
+    padding: 40px 0 20px 0;
+    border-radius: 10px 10px 0 0px;
+}
+.succ p{
+    margin-top: 30px;
+    font-size: 4em;
+    text-transform: uppercase;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0 50px 0 50px;
+}
+.succ2{
+    width: 100%;
+    height: auto;
+    padding: 20px 0 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0efe9;
+    text-transform: capitalize;
+    border-radius: 0 0 10px 10px;
+}
+.succ2 a{
+    color: rgb(0, 102, 255);
+    font-size: 2em;
+}
+.succ2 .a:hover{
+    color: rgb(24, 239, 117);
+}

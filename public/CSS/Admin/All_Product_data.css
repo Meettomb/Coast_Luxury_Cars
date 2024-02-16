@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+/* .table1{
+    width: 100%;
+    height: auto;
+    background-color: red;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: -12%;
+} */
+
+.div1{
+    width: 100vw;
+    height: auto;
+}
+table{
+    width: 100vw;
+    margin-top: 20px;
+}
+.table1 th{
+    border-right: 1px solid;
+    border-color: rgba(0, 0, 0, 0.331);
+    padding: 0 5px 5px 5px;
+    font-size: 1em;
+    width: auto;
+    height: 30px;
+    overflow: scroll;
+    text-align: center;
+    border-bottom: 2px black solid;
+    color: white;
+}
+
+.tr2 td{
+    margin-top: 20px;
+    font-size: 1.5em;
+    /* border-right: 1px rgb(255, 255, 255) solid; */
+    /* border-bottom: 1px rgb(255, 255, 255) solid; */
+    text-align: center;
+    color: white;
+    text-transform: capitalize;
+    
+}
+
+.tr2 td img{
+    object-fit: cover;
+}
+.container1{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+.search{
+    width:50%;
+    height: auto;
+    margin-left: 20px;
+    display: inline-flex;
+}
+.search input{
+    width: 80%;
+    height: 40px;
+    outline: none;
+    padding: 0 0 0 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #dad6d6;
+    color: black;
+    font-size: 1.5em;
+    font-weight: 400;
+    float: left;
+}
+
+.search input:focus{
+    outline: 1.5px rgb(0, 255, 213) solid;
+    box-shadow: 0 0 4px 0px lightblue,
+            0 0 8px 0px cyan;
+}
+.count{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dad6d6;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    font-family: cursive;
+    font-size: 1em;
+}
+.count span{
+    padding: 0 20px 0 10px;
+}
+.count p{
+    /* background-color: black; */
+    color: black;
+    margin-right: 0px;
+    margin-left: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 10px;
+    width: 2%;
+    font-size: 2em;
+    font-family: cursive;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.modal{
+    width: 20%;
+    height: auto;
+    height: auto;
+    background-color: white;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 0%;
+    left: 40%;
+    padding: 20px 0 20px 0;
+}
+.modal2{
+    width: 50%;
+    height: 50%;
+}
+
+
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    margin: 20px auto;
+    padding: 20px;
+    background: #dc0202;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+    color: #ffffff;
+    font-family: Tahoma, Arial, sans-serif;
+    text-transform: capitalize;
+    display: inline-flex;
+  }
+  .popup .close {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    display: inline-flex;
+  }
+  .popup .close:hover {
+    color: #03c052;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .overlay1 {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay1:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup1 {
+    margin: 20px auto;
+    padding: 20px;
+    background: #35dc02;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+  }
+  
+  .popup1 h2 {
+    margin-top: 0;
+    color: #ffffff;
+    font-family: Tahoma, Arial, sans-serif;
+    text-transform: capitalize;
+    display: inline-flex;
+  }
+  .popup1 .close1 {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    display: inline-flex;
+  }
+  .popup1 .close1:hover {
+    color: cyan;
+  }

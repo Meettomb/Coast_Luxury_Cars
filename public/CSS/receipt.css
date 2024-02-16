@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+::-webkit-scrollbar{
+    display: none;
+}
+body{   
+    font-size: 10px;
+}
+.con{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    font-weight: 550;
+    border-bottom: 2px black solid;
+}
+.par{
+    width: 85%;
+    height: auto;
+    margin-top: 40px;
+    padding: 0px 0 10px 0;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+.par2{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.web_info{
+    background-color: #222;
+    color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+.logo img{
+    width: 15%;
+}
+.what{
+    text-transform: uppercase;
+    word-spacing: 10px;
+    letter-spacing: 2px;
+    font-size: 2em;
+    margin-left: -80px;
+}
+.addrash{
+    width: 100%;
+    margin-top: 30px;
+    font-size: 1.5em;
+
+}
+.addrash p{
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    margin-left: 20px;
+}
+.addrash p span{
+    margin-left: 15px;
+    color: red;
+    text-transform: uppercase;
+}
+.car_info{
+    margin-top: 30px;
+    font-size: 1.5em;
+}
+.car_info .heading{
+    width: 100%;
+    background-color: #222;
+    color: white;
+    padding: 10px 0 10px 0;
+    border-radius: 30px 0 30px 0;
+}
+.car_info .heading h1{
+    margin-left: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+}
+.car_info .left{
+    float: left;
+    width: 48%;
+    height: auto;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.car_info .left span{
+    color: red;
+    margin-left: 20px;
+}
+.car_info .right{
+    width: 48%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.car_info .right span{
+    color: red;
+    margin-left: 20px;
+}
+.pay_info{
+    margin-top: 30px;
+    font-size: 1.5em;
+    padding-bottom: 20px;
+    border-bottom: 2px black dashed;
+}
+.pay_info .heading{
+    width: 100%;
+    background-color: #222;
+    color: white;
+    padding: 10px 0 10px 0;
+    border-radius: 30px 0px 30px 0px;
+}
+.pay_info .heading h1{
+    margin-left: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+}
+.pay_info p{
+    text-transform: capitalize;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.pay_info p span{
+    margin-left: 15px;
+    color: red;
+    text-transform: uppercase;
+}
+.bac_image{
+    position: absolute;
+    z-index: -1;
+    top: 20%;
+    left: 10%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.3;
+}
+.bac_image img{
+    width: 1000px;
+}
+.lorem{
+    margin-top: 40px;
+    font-size: 2em;
+    width: 98%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.lorem_span{
+    width: 99%;
+    margin-left: 20px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+.sign{
+    width: 85%;
+    margin-top: 40px;
+}
+.sign img{
+    float: right;
+    width: 20%;
+    filter: grayscale(100%);
+}
+.but{
+
+    display: inline-flex;
+    width: 100%;
+    flex-direction: row-reverse;
+}
+#btn-print{
+    font-size: 2em;
+    margin-right: 30px;
+    margin-top: 23px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}

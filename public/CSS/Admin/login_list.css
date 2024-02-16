@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.table_div{
+    width: 100%;
+    height: auto;
+    font-size: 10px;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+table{
+    width: 100%;
+    border-spacing: 10px;
+}
+th{
+    font-size: 1.5em;
+    /* border-left: 1px black solid; */
+    padding: 5px 0 5px 5px;
+    color: white;
+}
+
+.tr2 td{
+    font-size: 1.5em;
+    padding: 5px 0 5px 5px;
+    color: white;
+    /* border-left: 1px black solid; */
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+
+.container1{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+.search{
+    width:50%;
+    height: auto;
+    margin-left: 20px;
+    display: inline-flex;
+}
+.search input{
+    width: 80%;
+    height: 40px;
+    outline: none;
+    padding: 0 0 0 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #dad6d6;
+    color: black;
+    font-size: 1.5em;
+    font-weight: 400;
+    float: left;
+}
+
+.search input:focus{
+    outline: 1.5px rgb(0, 255, 213) solid;
+    box-shadow: 0 0 4px 0px lightblue,
+            0 0 8px 0px cyan;
+}
+.count{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dad6d6;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    font-family: cursive;
+    font-size: 1em;
+}
+.count span{
+    padding: 0 20px 0 10px;
+}
+.count p{
+    /* background-color: black; */
+    color: black;
+    margin-right: 0px;
+    margin-left: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 10px;
+    width: 2%;
+    font-size: 2em;
+    font-family: cursive;
+}
