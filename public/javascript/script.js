@@ -176,26 +176,3 @@ function displayImage3() {
         reader.readAsDataURL(input.files[0]);
     }
 }
-
-// 
-// const form=document.querySelector("form");
-
-// function sendEmail(){
-//     Email.send({
-//     Host : "smtp.gmail.com",
-//     Username : "coastluxurycar@gmail.com",
-//     Password : "494060EB0DDFD1A565EDB54607666C7BA04E",
-//     To : 'coastluxurycar@gmail.com',
-//     From : "coastluxurycar@gmail.com",
-//     Subject : "This is Feedback",
-//     Body : "And this is the body"
-//         }).then(
-//         message => alert(message)
-//         );
-//     }
-
-//     form.addEventListener("submit",(e)=>{
-//         e.preventDefault();
-
-//         sendEmail();
-//     });
